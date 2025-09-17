@@ -1,5 +1,5 @@
 <template>
-  <h1>Hello WEBPROG AFD241 World!</h1>
+  <h1>Hello WEBPROG World! Im Chrisjan</h1>
   <h2>Food</h2>
   <FoodItem />
   <FoodItem2 /> 
