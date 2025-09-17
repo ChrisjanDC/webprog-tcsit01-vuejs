@@ -1,7 +1,7 @@
 <template>
   <div class="food-box pizza">
-    <h3>🍕 Pizza</h3>
-    <p>This is Food Item 2</p>
+    <h3>🍕</h3>
+    <p>I love pizza as well!!</p>
   </div>
 </template>
 
