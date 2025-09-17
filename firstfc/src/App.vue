@@ -5,7 +5,12 @@
   <food-item2/> 
 </template>
 
-<script></script>
+<script>
+export default {
+  name: "App"
+}
+</script>
 
 <style>
+/* add your styles if needed */
 </style>
