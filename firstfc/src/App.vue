@@ -6,3 +6,9 @@
     <food-item2></food-item2>
   </div>
 </template>
+
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+}
+</style>
