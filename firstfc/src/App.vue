@@ -1,16 +1,15 @@
 <template>
   <h1>Hello WEBPROG AFD241 World!</h1>
-  <h2>Food</h2>
-  <food-item/>
-  <food-item2/> 
+  <FoodItem />
 </template>
 
 <script>
+import FoodItem from './components/FoodItem.vue'
+
 export default {
-  name: "App"
+  name: "App",
+  components: {
+    FoodItem
+  }
 }
 </script>
-
-<style>
-/* add your styles if needed */
-</style>
