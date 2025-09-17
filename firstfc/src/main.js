@@ -1,11 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+
+// Import components
 import FoodItem from './components/FoodItem.vue'
 import FoodItem2 from './components/FoodItem2.vue'
 
 const app = createApp(App)
 
-// Register components
+// Register components globally
 app.component('food-item', FoodItem)
 app.component('food-item2', FoodItem2)
 
