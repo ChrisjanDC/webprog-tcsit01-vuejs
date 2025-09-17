@@ -5,6 +5,7 @@ import FoodItem2 from './components/FoodItem2.vue'
 
 const app = createApp(App)
 
+// Register components
 app.component('food-item', FoodItem)
 app.component('food-item2', FoodItem2)
 
