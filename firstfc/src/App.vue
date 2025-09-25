@@ -1,14 +1,21 @@
-<template>
-  <div>
-    <h1>Hello WEBPROG World! I'm Chrisjan</h1>
-    <h2>Food</h2>
-    <food-item></food-item>
-    <food-item2></food-item2>
-  </div>
-</template>
+<script setup>
+import { ref, onMounted } from 'vue'
+import { supabase } from './lib/supabaseClient'
 
-<style>
-body {
-  font-family: 'Poppins', sans-serif;
+const instruments = ref([])
+
+async function getInstruments() {
+  const { data } = await supabase.from('instruments').select()
+  instruments.value = data
 }
-</style>
+
+onMounted(() => {
+   getInstruments()
+})
+</script>
+
+<template>
+  <ul>
+    <li v-for="instrument in instruments" :key="instrument.id">{{ instrument.name }}</li>
+  </ul>
+</template> 
